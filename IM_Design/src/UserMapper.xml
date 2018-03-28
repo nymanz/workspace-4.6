@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+			<!DOCTYPE mapper
+			PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+			"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.IM_Design.mapper">
+	<!-- namespace:名称空间 id:sql语句的唯一标识 resultType:返回值类型 #{id}:接收参数传递过来的id值 -->
+	<select id="selectEmp" resultType="cn.com.IM_Design.beans.User">
+		select name from users where id = #{id}
+	</select>
+</mapper>
